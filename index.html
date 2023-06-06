@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"    href="CSS/style.css" />
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="main_content" id="content">
+      <span class="first_page" id="first_page">
+      <div class="star">
+        <div class="star_wrapper">
+          <img src="images/icon-star.svg" alt="star">
+        </div>
+      </div>
+      <div class="main_title">
+        <h1>How did we do?</h1>
+      </div>
+      <div class="content_description">
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div>
+      <div class="raiting_numbers">
+        <div class="raiting_number" onclick="onSelectOpinion(event,1)">1</div>
+        <div class="raiting_number" onclick="onSelectOpinion(event,2)">2</div>
+        <div class="raiting_number" onclick="onSelectOpinion(event,3)">3</div>
+        <div class="raiting_number" onclick="onSelectOpinion(event,4)">4</div>
+        <div class="raiting_number" onclick="onSelectOpinion(event,5)">5</div>
+      </div>
+      <div class="raiting_submit">
+        <button class="btn_sub"  onclick="onSubmit()">SUBMIT</button>
+      </div>       
+      </span>
+      <div class="second_page" id="second_page">
+        <div class="second_page_pict">
+          <img src="images/illustration-thank-you.svg" alt="thanks">
+        </div>
+        <div class="second_page_result">
+          <div class="result_content"><span>You selected <span id="result_second">4</span> out of 5</span></div>
+        </div>
+        <div class="second_page_thanks">Thank you!</div>
+        <div class="second_page_description">
+          We appricate you taking the time to give a raiting. If you ever need more support, don't hesitate to get in touch!
+        </div>
+    </div>   
+    </div>
+  </div>
+
+   
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
